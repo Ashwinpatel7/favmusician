@@ -2,24 +2,26 @@ const artistData = {
     edSheeran: {
         name: "Ed Sheeran",
         traits: "You are soulful and sensitive, with a deep appreciation for heartfelt lyrics and melodies.",
-        image: "https://example.com/images/edsheeran.jpg"
+        image: "https://example.com/images/edsheeran.jpg" // Replace with the actual image URL
     },
     taylorSwift: {
         name: "Taylor Swift",
         traits: "You are expressive and romantic, often finding connections to personal experiences through music.",
-        image: "https://example.com/images/taylorswift.jpg"
+        image: "https://example.com/images/taylorswift.jpg" // Replace with the actual image URL
     },
     coldplay: {
         name: "Coldplay",
         traits: "You are introspective and imaginative, enjoying music that explores complex emotions and themes.",
-        image: "https://example.com/images/coldplay.jpg"
+        image: "https://example.com/images/coldplay.jpg" // Replace with the actual image URL
     },
     eminem: {
         name: "Eminem",
         traits: "You are bold and outspoken, with a strong sense of individuality and a penchant for lyrical storytelling.",
-        image: "https://example.com/images/eminem.jpg"
+        image: "https://example.com/images/eminem.jpg" // Replace with the actual image URL
     }
 };
+
+document.getElementById('showTraitsButton').addEventListener('click', showCharacterTraits);
 
 function showCharacterTraits() {
     const select = document.getElementById("artist-select");
@@ -35,3 +37,4 @@ function showCharacterTraits() {
         result.style.display = "block";
     }
 }
+
