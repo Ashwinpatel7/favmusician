@@ -21,7 +21,10 @@ const artistData = {
     }
 };
 
-document.getElementById('showTraitsButton').addEventListener('click', showCharacterTraits);
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById('showTraitsButton');
+    button.addEventListener('click', showCharacterTraits);
+});
 
 function showCharacterTraits() {
     const select = document.getElementById("artist-select");
@@ -37,4 +40,3 @@ function showCharacterTraits() {
         result.style.display = "block";
     }
 }
-
